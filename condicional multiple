@@ -1,0 +1,54 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+void main()
+{
+    int opcion;
+    float area, base, altura;
+    cout<<"MENU"<<endl;
+    cout<<"1.area del triangulo"<<endl;
+    cout<<"2.area del rectangulo"<<endl;
+    cout<<"3.area del cuadrado"<<endl;
+    cout<<"0.salir"<<endl;
+    cout<<"elige una opcion";
+    cin>>opcion;
+    switch (opcion)
+    {
+    case 1:
+        {cout<<"ingrese la base";
+         cin>>base;
+         cout<<"ingrese la altura";
+         cin>>altura;
+         area=(base*altura)/2;
+         cout<<"el area es:"<<area;
+         break;
+        }
+    case 2:
+        {cout<<"ingrese la base:";
+         cin>>base;
+         cout<<"ingrese la altura:";
+         cin>>altura;
+         area=(base*altura);
+         cout<<"el area es:"<<area;
+         break;
+        }
+    case 3:
+        {cout<<"ingrese la base:";
+        cin>>base;
+        area=powf(base,2);
+        break;
+        }
+    case 0:
+        {cout<<"salir";
+        break;
+        }
+    default :
+        {cout<<"opcion invalida";
+        break;
+        }
+    }
+
+    getch();
+}
