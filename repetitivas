@@ -1,0 +1,72 @@
+//for
+
+void main()
+{
+    int i,n,mayor,menor,numero;
+    mayor=numero;
+    menor=numero;
+    cout<<"introducicr n:";
+    cin>>n;
+    cout<<"ingrese el valor:";
+    cin>>numero;
+        for(i=1;i<n;i++)
+
+        {if(numero>mayor)
+                mayor=numero;
+                cout<<" el numero es mayor"<<endl;
+            else
+             
+                menor=numero;
+                cout<<" el numero es mayor"<<endl;
+           
+        }
+       
+        getch();
+}
+
+//while
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+    int numero;
+    cout<<"digite un numero:"<<endl;
+    cin>>numero;
+
+    while (numero!=0)
+    {
+        if (numero>0)
+        cout<<"el numero es positivo"<<endl;
+        else
+        cout<<"el numero es negativo"<<endl;
+        cout<<"digite otro numero (0 para salir)"<<endl;
+        cin>>numero;
+    }
+    return 0;
+}
+
+//do while
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+int main()
+{
+  int valido = 0000;
+  int numero;
+ 
+  do
+  {
+    cout<< "Introduzca un numero: "<<endl;
+    cin>>numero;
+    if (numero != valido)
+        cout<<"numero No valido!"<<endl;
+  }
+  while (numero != valido);
+         cout<<"numero valido"<<endl;
+ 
+  return 0;
+}
